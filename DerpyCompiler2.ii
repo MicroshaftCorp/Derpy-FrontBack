@@ -1,6 +1,2 @@
 gcc -O3 -c kernel.c
 ld -Ttext 0xFF800000 --oformat binary -o kernel.bin kernel.o kernel_c.o
-PARTCOPY bootf.bin 0 3 -f0 0
-
-PARTCOPY bootf.bin 3E 1C2 -f0 3E
-
